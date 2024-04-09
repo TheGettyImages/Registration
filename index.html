@@ -2,13 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Registration Form</title>
+		<title>Advising Appointment Form</title>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<h2>Registration</h2>
+		<h2>Advising Appt</h2>
 		<div class="container">
-			<form>
+			
+			<form method="get" action="thankyou.html">
 			<fieldset>
 			<legend>
 			Contact Information
@@ -26,7 +27,82 @@
 				<input type="email" name="fname" id="email" required placeholder="Email" />
 			</label>
 			</fieldset>
+			
+			<fieldset>
+			<legend>
+			Date
+			</legend>
+			<label for="teachers">
+			Teacher:
+			<select name="teachers" id="teachers">
+					<option value="Tiffany Ford">Tiffany Ford</option>
+					<option value="Kirsten Markley">Kirsten Markley</option>
+					<option value="Jackson Lewis">Jackson Lewis</option>
+				</select>
+			</label>
+			<label for="months">
+			Month:
+				<select name="months" class="months" id="months">
+					<option value="01">January</option>
+					<option value="02">February</option>
+					<option value="03">March</option>
+					<option value="04">April</option>
+					<option value="05">May</option>
+					<option value="06">June</option>
+					<option value="07">July</option>
+					<option value="08">August</option>
+					<option value="09">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				</label>
+				<label for="day">
+				Day:
+				<input required type="number" class="day" name="day" id="day" min="1" max="31" placeholder="1">
+				</label>
+				
+				
+				
+					<input type="radio" class="time" name="time" id="am" value="AM" >
+					<label class="timelabel" for="am">AM</label>
+					<input type="radio" class="time" name="time" id="pm" value="PM">
+					<label class="timelabel" for="pm">PM</label>
+				
+				
+				</fieldset>
+			<fieldset>
+			<legend>
+			Classes
+			</legend>
+				
+				
+				<input type="checkbox" class="class" name="class" id="math" value="Math">
+				<label class="classlabel" for="math">Math</label>
+  
+				<input type="checkbox" class="class" name="class" id="science" value="Science">
+				<label class="classlabel" for="science">Science</label>
+  
+				<input type="checkbox" class="class" name="class" id="history" value="History">
+				<label class="classlabel" for="history">History</label>
+
+				<input type="checkbox" class="class" name="class" id="english" value="English">
+				<label class="classlabel" for="english">English</label>
+				
+				<input type="checkbox" class="class" name="class" id="art" value="Art">
+				<label class="classlabel" for="art">Art</label>
+
+			</fieldset>
+			<fieldset>
+				<legend>
+				Extra Information
+				</legend>
+					<textarea name="message" id="message" rows="5" cols="40"></textarea>
+			</fieldset>
+
+
 				<input class="submit" type="submit" value="Submit" />
+				
 			</Form>
 		
 		</div>

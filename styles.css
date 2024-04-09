@@ -19,6 +19,7 @@ label {
 	display:block;
 	padding-bottom: 5px;
 	position:relative;
+
 }
 	
 input {
@@ -27,3 +28,28 @@ input {
 	width: 75%;
 }
 .submit {width: initial; position:initial;}
+
+.day {
+	position: initial;
+	width: 5%;
+}
+
+.time {
+	
+	width: 5%;
+}
+
+.timelabel {
+	position: initial;
+}
+
+.classlabel {
+	position: initial;
+}
+
+.class {
+	
+	width: 5%;
+	display: inline-block;
+	
+}
